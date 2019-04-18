@@ -6,6 +6,8 @@ This project demonstrates the impressive potential of Reinforcement Learning.
 
 [Contribution guidelines for this project](docs/CONTRIBUTING.md)
 
+![alt text](http://url/to/img.png)
+
 Why the project is useful:
 
 
