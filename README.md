@@ -4,7 +4,7 @@ The Navigation Project ist a part of the "Reinforcement Learning Nanodegree" edu
 What the project does:
 This project demonstrates the impressive potential of Reinforcement Learning.
 
-
+[Contribution guidelines for this project](docs/CONTRIBUTING.md)
 
 Why the project is useful:
 
