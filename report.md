@@ -25,7 +25,7 @@ I can highly recommend the following post of Mohammad Ashraf in 4 episodes:
 #### The Q-Learning-Algorithm (also named as Sarsamax)
 The follwing depiction shows the pseudo-code of the Q-Learning iteration algorithm.
 
-![Q-Learning-Algorithm](.\attachments/PseudoCode_Q_Learning_Algorithm.jpg)  
+![Q-Learning-Algorithm](./attachments/PseudoCode_Q_Learning_Algorithm.jpg)  
 
 This algorithm is a variation of the temporal-difference algorithm and is off policy.
 Off-policy, because there are two policies in this algorithm.
@@ -59,7 +59,7 @@ With experience replay it is possible, to dampen  the strict correlation of cons
 So we gather a bunch of agent-steps, store it and select it a bit later randomly  for our learning-algorithm.
 With this technique we discorrelate the given input-stream and make the algorithm more successful.
 
-![Q-Learning-Algorithm](.\attachments/Deep-Q-Learning-Algorithm.jpg)
+![Q-Learning-Algorithm](./attachments/Deep-Q-Learning-Algorithm.jpg)
 
 In a DQN our policy is  represented in a neural network (nn).
 The state-data is  our nn-input 
@@ -110,13 +110,13 @@ https://arxiv.org/pdf/1509.06461.pdf?
 Overestimating of Q-Values is especially a problem by starting the network training, as we start with a lot of noisy data.
 So we can easily get outliers of Q-Values. 
 
-![Q-Learning-Algorithm](.\attachments\DDQN_Picture_01.JPG)
+![Q-Learning-Algorithm](./attachments/DDQN_Picture_01.JPG)
 
 DDQN works with two different neural networks and is constructed to reduce these data-ouliers.
 The first network is called  the local network and the second network is called  the target network.
 We use results of both networks to improve the network-performance by reducing overstimatings of Q-Values.
 A DDQN is constructed to reduce these data-outliers.
-![Q-Learning-Algorithm](.\attachments\DDQN_Picture_02.JPG)
+![Q-Learning-Algorithm](./attachments/DDQN_Picture_02.JPG)
 
 The Agent moves with his local network-policy "against" the target network.
 The weights of the target network are periodically updated with the weights of the local network 
