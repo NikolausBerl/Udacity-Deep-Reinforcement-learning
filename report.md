@@ -1,13 +1,13 @@
 #### Agent with best results in action:
 
-<img src="attachments/bananaKlausAgent.gif" width="60%" align="top-left" alt="" title="Banana Agent" />
+<img src="attachments/BananaAgent2019041611.gif" width="50%" align="top-left" alt="" title="My Banana Agent" />
 
 #### Remarques
 To be able to follow this project description in detail, 
 basic knowledge about the following topics would be helpful:
 - python
 - neuronal networks
-- pytorch
+- pytorch50
 - numpy (python package)
 
 #### Mathematical basis of RL-Systems
