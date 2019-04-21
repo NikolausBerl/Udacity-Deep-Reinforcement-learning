@@ -1,6 +1,6 @@
 #### Agent with best results in action:
 
-
+<img src="attachments/bananaKlausAgent.gif" width="60%" align="top-left" alt="" title="Banana Agent" />
 
 #### Remarques
 To be able to follow this project description in detail, 
