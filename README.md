@@ -8,7 +8,7 @@ To get the Nanodegree-Diploma, students have to realize several software project
 #### What is Reinforcement Learning ?
 A Reinforcement-Learning-System is a System constructed with artificial intelligence technique.
 In the following picture you can see the  principle structure of a "Reinforcement Learning"-System:
-![GitHub Logo](.\attachments\ReinforcementLearningPrinciple.JPG)
+![GitHub Logo](attachments/ReinforcementLearningPrinciple.JPG)
 Such a system is composed of the following componends:
 
 * the agent 
