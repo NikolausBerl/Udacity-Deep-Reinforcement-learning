@@ -40,21 +40,21 @@ the corresponding reward.
 The learning-policy uses  the recursive update-rule of the Q-Learning algorithm "Q(St, At)..." by
 using the max-Q-Value of State_2.
 After some iteration-work an optimized Q-Table (table with optimized Q-values of each state) will be created.
-The agent use now this Q-table by using the maximum Q-value of each state-action pair. 
+The agent uses now this Q-table by applying the maximum Q-value of each state-action pair. 
 Up to now the agent can  move with an optimized policy.
 
 #### Deep-Q-Learning-Algorithm
 Deep-Q-Learning (DQN) means, that we use Neural Networks to predict the next action of our agent.
-We need DQN, if our agent move in a continous world. This means, that the environment consists of infinitve 
+We need DQN, if our agent moves in a continous world. This means, that the environment consists of infinitve 
 states or actions or both.
 We find this case often in our real world.
 
 In a continous world, it is not possible to find an optimal policy for the agent just with "dynamic programming".
-The reason is, that we come in a continious world to an unsolvable non-linear equation-system. 
+The reason is, that in a continious world we come to an unsolvable non-linear equation-system. 
 
 To solve this problem, we use Neural Networks as a function approximator.
 
-Below you see the depiction of the pseudo-code of a DQN-Algorithm which use additionaly the experience reply technique.
+Below you see the depiction of the pseudo-code of a DQN-Algorithm which uses additionaliy the experience reply technique.
 With experience replay it is possible, to dampen  the strict correlation of consecutive timesteps of states.
 So we gather a bunch of agent-steps, store it and select it a bit later randomly  for our learning-algorithm.
 With this technique we discorrelate the given input-stream and make the algorithm more successful.
@@ -68,11 +68,11 @@ and the neural network will approximate the best action by  using the states, ac
 DQN -like all nn-systems-  are able to find patterns behind the given input data to solve the given issue.
 
 
-#### Implemented Neural network:
+#### Implemented Neural Network:
 
 The module "model.py" contains the used  Neural Network (nn) definition.  
 
-This is composed with three fully connected layers with the following
+This is composed of three fully connected layers with the following
 parameter-set:
 
 *First  layer --> input layer:*  
@@ -97,24 +97,24 @@ LR = 5e-4, learning rate
 UPDATE_EVERY = 4, how often to update the network  
 
 
-#### Implementing of the Double-Deep-Q-Networrk (DDQN)-algorithm.
+#### Implementation of the Double-Deep-Q-Networrk (DDQN)-algorithm.
 There are different  optimization techniques for DQN's
 One of these techniques is the use of a DDQN-networks, which I implemented in this project.
 
-For more detailed information about DDQN-netwoks, have a look in the following science paper
+For more detailed information about DDQN-netwoks, have a look at the following science paper
 from Hado van Hasselt, Arthur Guez and David Silver about DDQN-Systems.
 https://arxiv.org/pdf/1509.06461.pdf?
 
 
 
-Overestimating of Q-Values is especially a problem by starting the network training, as we start with a lot of noisy data.
+Overestimating  Q-Values is especially a problem when starting the network training, as we start with a lot of noisy data.
 So we can easily get outliers of Q-Values. 
 
 ![Q-Learning-Algorithm](./attachments/ddqnPicture01.JPG)
 
 DDQN works with two different neural networks and is constructed to reduce these data-ouliers.
 The first network is called  the local network and the second network is called  the target network.
-We use results of both networks to improve the network-performance by reducing overstimatings of Q-Values.
+We use results of both networks to improve the network-performance by reducing overstimation of Q-Values.
 A DDQN is constructed to reduce these data-outliers.
 ![Q-Learning-Algorithm](./attachments/ddqnPicture02.JPG)
 
@@ -133,19 +133,19 @@ taken from the target network.
 #### Testsets and results
 
 *Test*  
-I implememented the following control-parameter for testing the system.
+I implememented the following control-switches for testing the system.
 See point 5 of the Jupyter Notebook-File "Navigation.ipynb"
 
 *is_double_Q_network = True:* 
-With this swich one can turn on/off the DDQN-System, otherwise the DQN-System works.
+With this switch you can turn on the DDQN-System, otherwise the DQN-System is activated.
 
 *is_experience_replay = True/False:*
 With this switch one can turn on/off the experience-replay proceeding.
 
 *self.test_on = True/False*
-This is a agent-class-Variable, to test the shapes of tensors.
-If test_on is True, then during the first loop-pass of the 
-learn-methode shapes and contents of important tensors are printed out.
+"test_on" is a agent-class-Variable, to test the shapes of tensors.
+If "test_on == True", then during the first loop-pass of the 
+learn-methode you will get information about shapes and contents of important nn-tensors.
 This should help retract what's going on with data-structures.
 
 
@@ -153,20 +153,20 @@ With this control-switches and the epsilon-greedy parameters
 eps_start, eps_end I eps_decay I looked for the best result.
 
 I got the best result with the parameter-set nr 5:
-With 357 episodes, I got an everage score 13,08 of the last hundret episodes.
+With 357 episodes, I got an average score of 13,08 of the last hundred episodes.
 
 *Interpretation of the result*  
 
-The biggest influence for the result had the use of the experience replay-technique.
-On the second place it was the optimization of the epsilon-greedy parameters.
-The improvement with DDQN in comparition with DQN was little.
+The biggest influence on the result had the use of the experience replay-technique.
+On the second place  was the optimization of the epsilon-greedy parameters.
+The improvement with DDQN in comparition with DQN was samll.
 
 
 
 #### Possible Improvements
 * Implementing "Grid Search" to identify a better optimized parameter-set. 
 * Use of a Dualing-Q-Network-algorithm
-* Use of Priorized experience Replay
+* Use of Priorized Experience Replay
 
 
 

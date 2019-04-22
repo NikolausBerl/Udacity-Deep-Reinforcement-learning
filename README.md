@@ -8,48 +8,48 @@ To get the Nanodegree-Diploma, students have to realize several software project
 #### What is Reinforcement Learning ?
 A Reinforcement-Learning-System is a System constructed with artificial intelligence technique.
 In the following picture you can see the  principle structure of a "Reinforcement Learning"-System:
-![GitHub Logo](.\attachements/ReinforcementLearningPrinciple.JPG)
+![GitHub Logo](.\attachments\ReinforcementLearningPrinciple.JPG)
 Such a system is composed of the following componends:
 
-* the Agent:  
-* the Environment
-* the Reward
+* the agent 
+* the environment
+* the reward
 * the state
 * the actions
 
 An agent has to solve a special task inside of a given environment.
 The task can be e.g. to find objects in a special environment.
-We can think that an Agent is a robot and if he is trained, he can take decicions
-on his own and finds often better and faster solutions as human beings.
+We can think that an Agent is a robot and if he is trained, he can take decisions
+on his own and often finds better and faster solutions as human beings.
 
 At the beginning to solve his task, the agent knows nothing about the environment.
-The agent gets just a feed-back from the environment about his proceeded action.
+The agent just gets  a feed-back from the environment about his proceeded action.
 Actions can be e.g. moving forward, backward, left and right, as used in this project. 
-One move is one action and the agent gets back a information about the state and he 
+One move is one action and the agent gets back an information about the state and he 
 gets back also a reward.
 With this information of the environment artificial-intelligence-algorithms can find an optimal behavior
-for solfing the agents task.
+for solving the agents task.
 We will have a look in detail on the here applied Deep Q-Learning-algorithm  in the
 file repord.md.
-In recent years, there have been some crucial technical breakthroughs in the field of artificial  
-intelligence that seemed unthinkable 10 years ago.
+In recent the years, there have been some crucial technical breakthroughs in the field of artificial  
+intelligence which seemed unthinkable 10 years ago.
 
 
-** To show two examples of this progress I would like to mention two examples:  **  
- ** 1.) ** The science paper from Hasselt, Guez and Silver:
+**To show two examples of this progress I would like to mention two examples:  **  
+1.) The science paper from Hasselt, Guez and Silver:
 
      https://arxiv.org/pdf/1509.06461.pdf  
 In this science work from 2015 the scientists developed an algorithm which was applied on 57-Atari-Plays.
-The Agent took the role of a human player and gets impressive results mostly far better  then human players.  
+The Agent took the role of a human player and got impressive results mostly far better  then human players.  
 The special Deep-Q-Learning-Algorithm (Double-Q-Learning) of this science paper is applied in the given Navigation
 project. 
 
-** 2.) ** Alpha Zero  (See also Wickipedia-Article:   https://en.wikipedia.org/wiki/AlphaZero)   
+2.) Alpha Zero  (See also Wickipedia-Article:   https://en.wikipedia.org/wiki/AlphaZero)   
 Alpha Zero  is a computer program developed by artificial intelligence research company DeepMind to master several games.
-This Software was able to learn to play Chess an reache a world champion level in 4 hours.
+This Software was able to learn to play chess and reached a world champion level in 4 hours.
 The Program learned only by playing against himselves.
 
-Breakethroughs in Neural Network Structures like CNN, RNN, GAN, RL as well as the improved computational CPU-power played an importand role in this progress.
+Breakehroughs in Neural Network Structures like CNN, RNN, GAN, RL etc. as well as the improved computational CPU-power played an importand role in this progress.
 
 
 #### What the Navigation project does ?
@@ -68,23 +68,26 @@ The task is episodic, and in order to solve the environment, your agent must get
 
 #### Why the project is useful ?
 In this project, we can study in detail the behaviour of an agent with the Deep-Q-Learning algorithm.
-Beside of some theoretical knowledge of Neural Networks, one need the practical experience  for a 
-better understanding of the stuff. This Procect is created to get it.
-We can learn from tewaking parameters and applying cutting edge optimizatione techniques of the Deep Q-Learning Algorithm.
+Beside  some theoretical knowledge of Neural Networks, one need the practical experience  for a 
+better understanding of the stuff. This project is created to get it.
+We can learn from tweaking parameters and applying cutting edge optimization-techniques of the Deep Q-Learning Algorithm.
 
 #### How users can get started with the project ?
 Step 1:  
-First, please follow the instructions of  the part deptencies on the Link below.
+First, please follow the instructions of the part dependencies on the Link below.
+https://github.com/udacity/deep-reinforcement-learning
+
+Step 2: 
 Install the Unity-Banana-Environment for your operating system.  
-If necessary for you, there is also the instruction for installung Python (anaconda with conda)
+
 https://github.com/udacity/deep-reinforcement-learning/tree/master/p1_navigation
 
-Step 2:   
-copy the files of my Github-Project-Directory in your local project-directory.
+Step 3:   
+Copy the files of my Github-Project-Directory in your local project-directory.
 
-Step 3:  
+Step 4:  
 Start your jupyter Notebook and call the "navigation.ipynb"-File in the working directory.
-(If jupyter notebook is not available on your machine, install it:    
+(If jupyter notebook is not available on your computer, install it:    
 https://jupyter.readthedocs.io/en/latest/install.html)
 
 good luck ☺️
